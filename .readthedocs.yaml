@@ -10,3 +10,7 @@ python:
   version: 3.9  # Adaptez selon votre version de Python
   install:
     - requirements: docs/requirements.txt
+build:
+  os: ubuntu -22.04
+  tools:
+  python : "3.9"

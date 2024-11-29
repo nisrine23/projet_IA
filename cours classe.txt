@@ -1,0 +1,13 @@
+chunk
+vectorisation
+token embedding 
+mxbai embed large 
+similarity search 
+lang chain 
+streaming 
+rnn 
+retreving 
+11434 : local de ollama
+gguf
+hugging face 
+q4
