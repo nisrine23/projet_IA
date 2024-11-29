@@ -1,0 +1,12 @@
+
+# .readthedocs.yaml
+version: 2
+
+sphinx:
+  configuration: docs/source/conf.py
+ # Vous devrez créer ce fichier dans l'étape suivante
+
+python:
+  version: 3.9  # Adaptez selon votre version de Python
+  install:
+    - requirements: docs/requirements.txt
