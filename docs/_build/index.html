@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tableau de Bord de Surveillance Industrielle &#8212; projet_ia_indus  documentation</title>
+    <title>Bienvenue dans la documentation de Projet IA Indus &#8212; projet_ia_indus  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -31,42 +31,96 @@
 
           <div class="body" role="main">
             
-  <section id="tableau-de-bord-de-surveillance-industrielle">
-<h1>Tableau de Bord de Surveillance Industrielle<a class="headerlink" href="#tableau-de-bord-de-surveillance-industrielle" title="Link to this heading">¶</a></h1>
+  <section id="bienvenue-dans-la-documentation-de-projet-ia-indus">
+<h1>Bienvenue dans la documentation de Projet IA Indus<a class="headerlink" href="#bienvenue-dans-la-documentation-de-projet-ia-indus" title="Link to this heading">¶</a></h1>
+<p>Ce projet consiste en la création d’un tableau de bord de surveillance industrielle avec un assistant virtuel (chatbot). Ce document présente les principales étapes, fonctionnalités et technologies utilisées dans le développement du projet.</p>
+<p><strong>Réalisé par :</strong>
+- Drief Nisrine
+- Marwa Chouacha</p>
+<p><strong>Encadré par :</strong>
+Mr. Masrour</p>
 <section id="objectif">
 <h2>Objectif<a class="headerlink" href="#objectif" title="Link to this heading">¶</a></h2>
-<p>Développer une application de tableau de bord dédiée à la surveillance industrielle, intégrant des outils de prévention et de suivi en temps réel.</p>
+<p>Développer une application industrielle comprenant :
+- Un tableau de bord interactif développé avec Streamlit.
+- Un chatbot basé sur Botpress pour assister les utilisateurs avec des informations sur l’entreprise, l’historique des pannes, et les protocoles de sécurité.</p>
 </section>
-<section id="fonctionnalites-principales">
-<h2>Fonctionnalités Principales<a class="headerlink" href="#fonctionnalites-principales" title="Link to this heading">¶</a></h2>
-<ol class="arabic">
-<li><p><strong>Surveillance en temps réel :</strong>
-- Affichage des données en direct provenant des capteurs et systèmes de l’usine.
-- Détection des anomalies potentielles.</p></li>
-<li><p><strong>Mini Chatbot Assistant Virtuel :</strong>
-- <strong>Objectif :</strong> Fournir un support interactif aux utilisateurs.
-- <strong>Fonctionnalités du chatbot :</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Répondre aux questions sur l’entreprise.</p></li>
-<li><p>Donner accès à l’historique des pannes.</p></li>
-<li><p>Proposer les procédures de sécurité à suivre en cas d’incident.</p></li>
-</ul>
-</div></blockquote>
-</li>
+<section id="pipeline-du-projet">
+<h2>Pipeline du projet<a class="headerlink" href="#pipeline-du-projet" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Collecte et préparation des données :</strong>
+- Sources : PDF fournis par un agent OCP, fichiers texte générés par ChatGPT, site officiel de l’entreprise.</p></li>
+<li><p><strong>Développement de l’interface Streamlit :</strong>
+- Visualisation des données industrielles.
+- Fonctionnalités clés : suivi des pannes, alertes, KPI (MTBF, MTTR, efficacité globale).</p></li>
+<li><p><strong>Développement et entraînement du chatbot :</strong>
+- Créé avec Botpress, une plateforme open-source pour le développement de chatbots.</p></li>
+<li><p><strong>Visualisation des résultats sur l’application :</strong>
+- Intégration des graphiques et du chatbot dans l’interface Streamlit.</p></li>
 </ol>
 </section>
-<section id="avantages">
-<h2>Avantages<a class="headerlink" href="#avantages" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Amélioration de la sécurité :</strong> Réduction des risques grâce aux alertes et aux recommandations en temps réel.</p></li>
-<li><p><strong>Efficacité accrue :</strong> Accès rapide à l’information grâce au chatbot intégré.</p></li>
-<li><p><strong>Centralisation des données :</strong> Gestion des informations de l’usine dans un tableau de bord unifié.</p></li>
+<section id="collecte-de-donnees">
+<h2>Collecte de données<a class="headerlink" href="#collecte-de-donnees" title="Link to this heading">¶</a></h2>
+<p>Les données utilisées dans le projet proviennent de plusieurs sources :
+- Rapports de stage et documents PDF.
+- Informations issues du site officiel de l’entreprise.
+- Fichiers texte pour enrichir les réponses du chatbot.</p>
+</section>
+<section id="developpement-de-l-interface-streamlit">
+<h2>Développement de l’interface Streamlit<a class="headerlink" href="#developpement-de-l-interface-streamlit" title="Link to this heading">¶</a></h2>
+<p>Le tableau de bord industriel inclut :
+- <strong>Page d’accueil :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Données sur l’efficacité actuelle.</p></li>
+<li><p>Historique des pannes détectées et alertes actives.</p></li>
+<li><p>Guide d’intervention et coordonnées de l’assistance technique.</p></li>
 </ul>
-<p>—</p>
-<p><strong>Prochaines étapes :</strong>
-- Implémentation des modèles de machine learning pour la détection des pannes.
-- Formation du chatbot avec les données spécifiques de l’entreprise.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Département :</strong>
+- Visualisation des tâches et objectifs par département.</p></li>
+<li><p><strong>KPI :</strong>
+- Indicateurs clés (MTBF, MTTR).
+- Visualisation graphique de l’efficacité.</p></li>
+<li><p><strong>Formation du personnel :</strong>
+- Informations sur les formations prévues, liste des inscrits.</p></li>
+<li><p><strong>Ressources :</strong>
+- Guides de bonnes pratiques et de sécurité.</p></li>
+</ul>
+</section>
+<section id="developpement-du-chatbot">
+<h2>Développement du chatbot<a class="headerlink" href="#developpement-du-chatbot" title="Link to this heading">¶</a></h2>
+<p><strong>Technologie utilisée :</strong> Botpress
+- <strong>Fonctionnalités principales :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Interface visuelle pour concevoir les conversations.</p></li>
+<li><p>Base de connaissances importée depuis divers supports.</p></li>
+<li><p>Formation des modèles NLP directement dans Botpress.</p></li>
+<li><p>Intégration des LLM (comme GPT-3.5).</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Fonctionnement logique :</strong>
+- Réponses basées sur une recherche dans la base de données.
+- Interaction en boucle jusqu’à la fin de la conversation.</p></li>
+</ul>
+</section>
+<section id="test-du-chatbot">
+<h2>Test du chatbot<a class="headerlink" href="#test-du-chatbot" title="Link to this heading">¶</a></h2>
+<p>Le chatbot est intégré et testé dans le code source. Les réponses et l’interface sont optimisées pour garantir une expérience utilisateur fluide.</p>
+</section>
+<section id="publication">
+<h2>Publication<a class="headerlink" href="#publication" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Code source :</strong> Hébergé sur GitHub.</p></li>
+<li><p><strong>Documentation :</strong> Publiée sur Read the Docs.</p></li>
+</ul>
+</section>
+<section id="fin-de-documentation">
+<h2>Fin de documentation<a class="headerlink" href="#fin-de-documentation" title="Link to this heading">¶</a></h2>
+<p>Pour en savoir plus sur le projet et son architecture, consulte le code source sur GitHub ou la documentation technique complète.</p>
 </section>
 </section>
 
