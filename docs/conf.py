@@ -1,34 +1,40 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../'))  # Remonte au dossier racine de votre projet
+sys.path.insert(0, os.path.abspath('../../'))
 
-
+# Informations sur le projet
 project = 'projet_ia_indus'
 copyright = '2024, nisrine'
 author = 'nisrine'
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
+# Extensions Sphinx
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.todo',
 ]
 
-
+# Chemins
 templates_path = ['_templates']
 exclude_patterns = []
 
+# Thème HTML
+html_theme = 'furo'
+html_theme_options = {
+    "light_css_variables": {
+        "color-brand-primary": "#e91e63",  # Rose
+        "color-brand-content": "#9c27b0",  # Violet
+    },
+    "dark_css_variables": {
+        "color-brand-primary": "#f48fb1",  # Rose clair
+        "color-brand-content": "#ce93d8",  # Violet clair
+    },
+}
 
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
+# Fichiers statiques
 html_static_path = ['_static']
+html_css_files = ['custom.css']  # CSS personnalisé, si nécessaire
+
