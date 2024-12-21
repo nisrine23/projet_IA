@@ -19,6 +19,10 @@ author = 'nisrine'
 
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.todo',
+    'myst_parser',  # Si tu utilises des fichiers Markdown
 ]
 
 

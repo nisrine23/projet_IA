@@ -15,7 +15,14 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
+    'myst_parser',  # Support des fichiers Markdown
 ]
+myst_enable_extensions = [
+    "dollarmath",  # Mathématiques dans Markdown
+    "amsmath",
+    "colon_fence",  # Blocs de colonnes
+]
+
 
 # Chemins
 templates_path = ['_templates']
@@ -38,3 +45,5 @@ html_theme_options = {
 html_static_path = ['_static']
 html_css_files = ['custom.css']  # CSS personnalisé, si nécessaire
 
+html_static_path = ['_static']
+html_css_files = ['custom.css']

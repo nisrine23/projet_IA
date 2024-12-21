@@ -1,1 +1,21 @@
 /* This file intentionally left blank. */
+/* Couleurs principales */
+:root {
+    --color-sidebar-background: #fce4ec; /* Rose clair pour la barre latérale */
+    --color-sidebar-link: #880e4f;       /* Liens violets */
+    --color-sidebar-link-active: #d81b60; /* Liens actifs rose foncé */
+}
+
+/* Ajustements supplémentaires */
+.wy-side-nav-search {
+    background-color: var(--color-sidebar-background);
+}
+
+.wy-nav-side a {
+    color: var(--color-sidebar-link);
+}
+
+.wy-nav-side a.current {
+    color: var(--color-sidebar-link-active);
+    font-weight: bold;
+}
