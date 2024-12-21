@@ -11,6 +11,8 @@ sphinx:
  # Vous devrez créer ce fichier dans l'étape suivante
 
 python:
-  
   install:
+    - method: pip
+      path: .
     - requirements: docs/requirements.txt
+
